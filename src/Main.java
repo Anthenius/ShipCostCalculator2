@@ -11,14 +11,14 @@ public class Main
         double totalCost = 0;
         String trash = "";
 
-        System.out.println("Enter the item price: ");
+        System.out.print("Enter the item price: ");
 
         if (console.hasNextInt())
         {
             itemPrice = console.nextDouble();
             console.nextLine();
 
-            if(itemPrice <= FREE_SHIP)
+            if(itemPrice >= FREE_SHIP)
             {
                 shipCost= 0;
                 totalCost = itemPrice;
@@ -39,9 +39,6 @@ public class Main
             System.out.println("You entered " + trash  + " not a number ");
             System.out.println("Run the program again with correct input");
         }
-
-
-
 
     }
 }
